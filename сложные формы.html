@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            *{
+                font-family: sans-serif;
+            }
+            .fc{
+                display: flex;
+                align-items: center;
+
+                width: 100%;
+
+                border: 1px solid gray;
+                margin-bottom: 10px;
+            }
+            .fcl{
+                border: 1px solid #d5d5d5
+            }
+
+
+            .fcl{
+                height:25px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid gray;
+            }
+            .fcil{
+                border-right: 1px solid #d5d5d5;
+            }
+            .inv{
+                border: 0;
+                outline: none;
+                padding-left: .5rem;
+            }
+            .title{
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .button{
+                text-transform: uppercase;
+                background-color: #22b8c7;
+                color:white;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .form{
+                width: 220px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="form">
+            <p class="title">Sign into your account</p>
+            <div class="fc fcl">
+                <div class="fci fcil"><img src="form-4_icon1.png" alt=""></div>
+                <div><input type="text" class="inv" placeholder="Username"></div>
+            </div>
+            <div class="fc">
+                <div class="fci"><img src="form-4_icon2 — копия.png" alt=""></div>
+                <div><input type="password" class="inv" plaxehollder=""></div>
+            </div>
+            <input type="submit" value="sign in" class="button">
+            <p>
+                <span>Not a mementer?</span>
+                <a href="">
+                    <span>Sign Up Now</span>
+                    <img src="form-4_arrow.png" alt="">
+                </a>
+            </p>
+        </form>
+    </body>
+</html>
