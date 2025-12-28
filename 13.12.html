@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            #rebrand{
+                display: none;
+            }
+            .lab{
+                background-color: #989696;
+                position: relative;
+                user-select: none;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                padding: 1rem 0;
+                width: 10rem;
+                border-radius: 3px;
+            }
+            #off{
+                color: #ffffff;
+                position: absolute;
+                transition: all 0.1s;
+                justify-content: center;
+                z-index: 7;
+                top: 7px;
+                padding-left: 105px;
+            }
+            #on{
+                color: #7bff67;
+                position: absolute;
+                transition: all 0.1s;
+                justify-content: center;
+                z-index: 10;
+                padding-left: 30px;
+                top: 7px;
+            }
+            .checker{
+                background-color: #ffffff;
+                position: absolute;
+                top: 2px;
+                bottom: 2px;
+                left: 2px;
+                border-radius: 3px;
+                width: 5rem;
+                z-index: 2;
+                transition: all 0.3s ease-in-out;
+            }
+
+            #rebrand:checked+.lab .checker{
+                left: calc(5rem - 2px);
+            }
+             #rebrand:checked+.toggle{
+            background-color: #afafaf;
+            }
+            #rebrand:checked+.lab #on{
+                color:#dad7d7;
+            }
+        
+            #rebrand:checked+.lab #off{
+                color:#b0b0b0;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" id="rebrand">
+        <label for="rebrand" class="lab">
+             <span id="on">ON</span>
+            <span id="off">OFF</span>
+            <span class="checker"></span>
+        </label>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <style>
+            *{
+                background-color: #38384e;
+                color: aliceblue;
+                font-family: sans-serif;
+            }
+            .d1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                margin-top: 30px;
+            }
+            .d2{
+                border-radius: 28px;
+                width: 54px;
+                padding-left: 2px;
+                padding-right: 2px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                background-color: #4f4f6e;
+                display: flex;
+                justify-content: flex-start;
+            }
+            .d3{
+                border-radius: 28px;
+                padding: 12px 12px;
+                background-color: #cecece;
+            }
+
+            .min{
+                display: none;
+            }
+
+            .min:checked+.d2{
+                justify-content: flex-end;
+                background-color: green;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            <input type="checkbox" id="safe" class="min">
+            <label class="d2" for="safe">
+                <span class="d3"></span>
+            </label>
+            <span>SAFE</span>
+            
+            <input type="checkbox" id="noai" class="min">
+            <label class="d2" for="noai">
+                <span class="d3"></span>
+            </label>
+            <span>NO AI</span>
+
+            <input type="checkbox" id="free" class="min">
+            <label class="d2" for="free"> 
+                <span class="d3"></span>
+            </label>
+            <span>FREE</span>
+
+             <input type="checkbox" id="best" class="min">
+            <label class="d2" for="best"> 
+                <span class="d3"></span>
+            </label>
+            <span>BEST</span>
+
+             <input type="checkbox" id="onsale" class="min">
+            <label class="d2" for="onsale"> 
+                <span class="d3"></span>
+            </label>
+            <span>ON SALE</span>
+
+             <input type="checkbox" id="withmakes" class="min">
+            <label class="d2" for="withmakes"> 
+                <span class="d3"></span>
+            </label>
+            <span>WITH MAKES</span>
+    </body>
+</html>

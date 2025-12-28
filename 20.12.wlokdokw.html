@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+             body{
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #rebrand{
+            display: none;
+        }
+        .toggle{
+            background-color: #adadad;
+            text-transform: uppercase;
+            padding: 10px 0;
+            width: 10rem;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 3px;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #off{
+            color: #5816ff;
+            z-index: 5;
+            position: relative;
+            transition: all 0.1s;
+            justify-self: center;
+        }
+
+        #on{
+            color: #d5d5d5;
+            z-index: 5;
+            position: relative;
+            transition: all 0.1s;
+            justify-self: center;
+        }
+
+        .checker{
+            background-color: #ffffff;
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            left: 2px;
+            border-radius: 3px;
+            width: 5rem;
+            z-index: 2;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #rebrand:checked+.toggle{
+            background-color: #3dac44;
+        }
+
+        #rebrand:checked+.toggle .checker{
+            left: calc(5rem - 2px);
+        }
+
+        #rebrand:checked+.toggle #off{
+            color: #e6fd16;
+        }
+        #rebrand:checked+.toggle #on{
+            color: #84d178;
+        }
+        </style>
+</head>
+<body>
+    <input type="checkbox" id="rebrand">
+    <label for="rebrand" class="toggle">
+        <span id="on">Off</span>
+        <span id="on">On</span>
+        <span class="checker"></span>
+    </label>
+    </body>
+</html>
