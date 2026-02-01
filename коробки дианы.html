@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .block {
+            background-color: #daf0da;
+            gap: 25px;
+            width: fit-content;
+            border-radius: 10px;
+        }
+
+        .block-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 50px;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #42b145;
+            margin: 10px;
+        }
+
+        .block-text {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .line {
+            display: block;
+            height: 3px;
+            border-radius: 3px;
+            background-color: #42b145;
+        }
+
+        .line:last-child {
+            width: 60% !important;
+            margin: auto;
+        }
+
+        .block-bottom {
+            padding: 10px 50px;
+        }
+
+        .block-bottom .line {
+            width: 150px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+        }
+
+        .right {
+            flex-direction: row-reverse;
+        }
+
+        .line-short {
+            margin: 0 !important;
+        }
+
+        .right .text {
+            align-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block block-top">
+            <div class="block-card">
+                <div class="circle"></div>
+                <div class="block-text">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="block-card">
+                <div class="circle"></div>
+                <div class="block-text">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="block-card">
+                <div class="circle"></div>
+                <div class="block-text">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <div class="block block-bottom">
+            <div class="card">
+                <div class="circle"></div>
+                <div class="text">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line line-short"></div>
+                </div>
+            </div>
+            <div class="card right">
+                <div class="circle"></div>
+                <div class="text">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line line-short"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

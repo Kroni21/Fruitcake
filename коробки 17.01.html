@@ -1,0 +1,326 @@
+<html>
+    <head>
+        <style>
+            .main{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
+            .dm1{
+                display: flex;
+                gap: 5px;
+            }
+            .dm2{
+                display: flex;
+                gap: 5px;
+            }
+            .d1{
+                width: 50px;
+                height: 40px;
+                background-color: #43a6fd;
+                border-radius: 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .d2{
+                background-color: white;
+                border-radius: 5%;
+                width: 20px;
+                height: 37px;
+                margin-right: 2px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .d3{
+                background-color: white;
+                border-radius: 5%;
+                width: 20px;
+                height: 37px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 5px;
+            }
+            .d4{
+                border-radius: 50%;
+                width: 7px;
+                height: 7px;
+                background-color: #81bff5;
+            }
+            .line1{
+                width: 15px;
+                height: 0.6px;
+                background-color: #81bff5;
+                margin-bottom: 1px;
+                margin-top: 10px;
+            }
+            .line{
+                width: 15px;
+                height: 0.6px;
+                background-color: #81bff5;
+                margin-bottom: 1px;
+                margin-top: 1px;
+            }
+            .line-short{
+                width: 12px;
+                height: 0.6px;
+                background-color: #81bff5;
+                margin-bottom: 1px;
+                margin-top: 1px;
+            }
+            .d2-1{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 1px;
+                margin-top: 5px;
+                width: 50px;
+                height: 40px;
+                background-color: #feb7d6;
+                border-radius: 5%;
+            }
+            .d2-2{
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 2px;
+            }
+            .d2-3{
+                background-color: #fb2984;
+                border-radius: 5%;
+                margin-left: 4px;
+                margin-top: 3px;
+                height: 18px;
+                width: 18px;
+            }
+            .d2-4{
+                display: flex;
+            }
+            .d2-5{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex end;
+                align-items: center;
+                margin-top: 3px;
+                gap: 2px;
+            }
+            .d2-6{
+                background-color: #fb2984;
+                height: 8px;
+                width: 8px;
+                margin-left: 2.5px;
+                border-radius: 10%;
+            }
+            .d2-7{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex end;
+                align-items: center;
+                margin-top: 3px;
+                gap: 2px;
+            }
+            .d2-8{
+                background-color: #fb2984;
+                height: 8px;
+                width: 8px;
+                margin-left: 2.5px;
+                border-radius: 10%;
+            }
+            .line-d2-1{
+                margin-top: 7px;
+                width: 39px;
+                height: 0.6px;
+                background-color: #fb2984;
+                margin-left: 6px;
+
+            }
+            .line-d2{
+                width: 39px;
+                height: 0.6px;
+                background-color: #fb2984;
+                margin-left: 6px;
+            }
+            .line-short-d2{
+                width: 28px;
+                height: 0.6px;
+                background-color: #fb2984;
+                margin-left: 6px;
+            }
+            .d3-1{
+                height: 40px;
+                width: 48px;
+                background-color: #fd4f24;
+                border-radius: 5%;
+                gap: 1.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .d3-2{
+                background-color: white;
+                border-radius: 5%;
+                height: 27px;
+                width: 44px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1.5px;
+            }
+            .d3-3{
+                background-color: white;
+                border-radius: 5%;
+                display: flex;
+                height: 8px;
+                width: 44px;
+            }
+            .d3-4{
+                border-radius: 50%;
+                height: 8px;
+                width: 8px;
+                background-color: #fd8e72;
+                margin-top: 4px;
+            }
+            .d3-5{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 13px;
+                height: 8px;
+                margin-left: 3px;
+                
+            }
+            .d3-6{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 28px;
+                height: 8px;
+                gap: 2.5px;
+            }
+            .d3-line1{
+                width: 21px;
+                height: 0.5px;
+                background-color:#fd8e72;
+                margin-top: 2px;
+            }
+            .d3-line{
+                width: 21px;
+                height: 0.5px;
+                background-color: #fd8e72;
+            }
+            .d3-line-short{
+                width: 18px;
+                height: 0.5px;
+                background-color: #fd8e72;
+            }
+            .d3-line2{
+                width: 6px;
+                height: 0.5px;
+                background-color: #fd8e72;
+            }
+            .d3-line3{
+                width: 6px;
+                height: 0.5px;
+                background-color: #fd8e72;
+            }
+            .d3-line4{
+                width: 6px;
+                height: 0.5px;
+                background-color: #fd8e72;
+                margin-right: 2px;
+            }
+            .d4-1{
+                height: 40px;
+                width: 48px;
+                margin-top: 5px;
+                background-color: #ffcabd;
+                border-radius: 5%;
+                gap: 1.5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .d4-2{
+                background-color: #fd4f24;
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+            }
+            .d4-line{
+                background-color: #fd4f24;
+                width: 13px;
+                height: 0.5px;
+            }
+            .d4-line5{
+                background-color: #fd4f24;
+                width: 10px;
+                height: 0.5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="dm1">
+            <div class="d1">
+                <div class="d2">
+                    <div class="d4"></div>
+                </div>
+                <div class="d3">
+                    <div class="line1"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line-short"></div>
+                </div>
+            </div>
+            <div class="d3-1">
+                <div class="d3-2">
+                    <div class="d3-4"></div>
+                    <div class="d3-line1"></div>
+                    <div class="d3-line"></div>
+                    <div class="d3-line-short"></div>
+                </div>
+                <div class="d3-3">
+                    <div class="d3-5">
+                        <div class="d3-line2"></div>
+                    </div>
+                    <div class="d3-6">
+                        <div class="d3-line3"></div>
+                        <div class="d3-line3"></div>
+                        <div class="d3-line4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dm2">
+            <div class="d2-1">
+                <div class="line-d2-1"></div>
+                <div class="line-d2"></div>
+                <div class="line-short-d2"></div>
+                <div class="d2-2">
+                    <div class="d2-3"></div>
+                    <div class="d2-4">
+                        <div class="d2-5">
+                            <div class="d2-6"></div>
+                            <div class="d2-6"></div>
+                        </div>
+                        <div class="d2-7">
+                            <div class="d2-8"></div>
+                            <div class="d2-8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d4-1">
+                <div class="d4-2"></div>
+                <div class="d4-line"></div>
+                <div class="d4-line5"></div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
