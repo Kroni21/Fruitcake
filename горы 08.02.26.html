@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <style>
+            .body{
+                font-family: "Rubik", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: weight;
+                font-style: normal;
+            }
+            .dm{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 734px;
+                height: 487px;
+                background-image: url("горы.png");
+            }
+            .d1{
+                display: flex;
+                justify-content: center;
+                border-radius: 7%;
+                border: 1px solid white;
+                height: 250px;
+                width: 230px;
+                background-color: rgba(144, 150, 173, 0.3);
+                backdrop-filter: blur(7px);
+                -webkit-backdrop-filter: blur(10px); 
+                -webkit-box-shadow: 0px 6px 22px 28px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 0px 6px 22px 28px rgba(34, 60, 80, 0.2);
+                box-shadow: 0px 6px 22px 28px rgba(34, 60, 80, 0.2);
+                }
+
+            .d2{
+                display: flex;
+                justify-content: flex-end;
+                width: 220px;
+            }
+            .d3{
+                background-color: rgb(38, 44, 82);
+                width: 25px;
+                height: 25px;
+                border-radius: 0 55% 0 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .d4{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .d5{
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                border-bottom: 2px solid black;
+                width: 185px;
+                margin-left: 8px;
+            }
+            .d6{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+                gap: 25px;
+            }
+            .d7{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .d8{
+                display: flex;
+                flex-direction: column;
+            }
+            .s1{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0;
+            }
+            .s2{
+                color: white;
+                font-size: 20px;
+            }
+            .s3{
+                font-size: 20px;
+            }
+            .s4{
+                font-size: 11px;
+            }
+            .s5{
+                font-size: 11px;
+            }
+            .s6{
+                font-size: 11px;
+                font-weight: 700;
+            }
+            .i1{
+                width: 25px;;
+            }
+            .in1{
+                background-color: transparent;
+                margin-top: 20px;
+                border: none;
+                outline: none;
+                margin-left: 0;
+                padding: 0;
+            }
+
+            input::placeholder{
+                    color: black;  
+            }
+            .in2{
+                    margin: 0;
+                    width: 10px;
+            }
+            .b1{
+                border: 1px solid #3a3838;
+                border-radius: 5px;
+                padding: 8px 5px 8px 5px;
+                background-color: #2a344f;
+                color: white;
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body class="body">
+        <div class="dm">
+            <div class="d1">
+                <form class="form">
+                    <div class="d2">
+                        <div class="d3"><span class="s2">x</span></div>
+                    </div>
+                    <div class="d4">
+                         <p class="s1">Login</p>
+                         <div class="d8">
+                            <div class="d5">
+                                <input type="text" class="in1"
+                                placeholder="Email">
+                                <span class="s3">✉</span>
+                            </div>
+                            <div class="d5">
+                                <input type="text" class="in1"
+                                placeholder="Password">
+                                <img src="free-icon-lock-10288768.png" alt="замок" class="i1">
+                            </div>
+                            <div class="d6">
+                                <div class="d7">
+                                    <input type="checkbox" class="in2">
+                                    <label><span class="s4">Remmember me</span></label>
+                                </div>
+                                <div class="d7">
+                                    <span class="s4">Foget password?</span>
+                                </div>
+                                </div>
+                                <button class="b1">Login</button>
+                                <div class="d7">
+                                    <p class="s5">Don't have an account?
+                                        <span class="s6">Register</span>
+                                    </p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
