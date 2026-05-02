@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <style>
+            .main{
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .i1{
+                position: absolute;
+                width: 960px;
+            }
+            .i2{
+                width: 260px;
+                height: 130px;
+                position: relative;
+                padding-left: 25px;
+                padding-top: 20px;
+            }
+            .nav1{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 1rem;
+            }
+            .toggler{
+                position: relative;
+                width: 1rem;
+                height: 10px;
+                z-index: 999;
+            }    
+               
+            .toggler span {
+                position: absolute;
+                display: block;
+                height: 2px;
+                background: white;
+                width: 1rem;
+                left: 0;
+                transition: top 0.5s, transform 0.5s;
+            }
+            
+            .sp1{
+                top: -4px;
+            }
+
+            .sp2{
+                top: 0;
+            }
+
+            .sp3{
+                top: 4px;
+            }
+            #toggle{
+                display: none;
+            }
+
+            #toggle:checked~.toggler .sp1{
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+            #toggle:checked~.toggler .sp2{
+                 transform: rotate(45deg);
+            }
+            #toggle:checked~.toggler .sp3{
+                transform: rotate(-45deg);
+                top: 0;
+            }
+            .navigation{
+                position: fixed;
+                left: -100vw;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #000d;
+                transition: left 0.5s ease-in-out;
+            }
+            
+            #toggle:checked~.navigation{
+                left:0
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav1">
+                <video src="doc_2026-04-25_13-20-26.mp4" autoplay loop class="i1"></video>
+                <img src="Cookie_Run_Kingdom_2021_logo.webp" class="i2">
+                <input type="checkbox" id="toggle">
+                <label class="toggler" for="toggle">
+                    <span class="sp1"></span>
+                    <span class="sp2"></span>
+                    <span class="sp3"></span>
+                </label>
+                <div class="nav2">
+                    <h1 style="font-size: 5rem; color: #fff;">HI</h1>
+                </div>    
+            </div>
+            <div>
+                <span class="s4">A WORLD OF</span>
+                <span class="s5">TEXTURES AND</span>
+                <span class="s6">COLORS</span>
+                <button>GET TEXTURES</button>
+            </div>
+            <span></span>
+        </div>
+    </body>
+</html>
