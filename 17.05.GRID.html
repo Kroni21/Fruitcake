@@ -1,59 +1,95 @@
 <html>
-    <head>
-        <style>
-             .grid{
-                display: grid;
-                grid-template-columns: repeat(3,200px);
-                grid-template-rows: repeat(3, 200px);
-                }
-              .card{
-                border: 2px solid #0c0c0c;
-                padding: 10px;
-                border: none;
-              } 
-              .card1{
-                    background-image: url("Sua.jpg");
-                    background-size: cover;
-              }
-              .card2{
-                    background-image: url("Mizi.jpg");
-                    background-size: cover;
-              }
-              .card3{
-                    background-image: url("Till.jpg");
-                    background-size: cover;
-              }
-              .card4{
-                    background-image: url("Ivan.jpg");
-                    background-size: cover;
-              }
-              .card5{
-                    background-image: url("Luka.jpg");
-                    background-size: cover;
-              }
-              .card6{
-                    background-image: url("HYUNA.jpg");
-                    background-size: cover;
-              }
-              .dmain{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100vh;
-                    background-color: aqua;
-              }
-        </style>
-    </head>
-    <body>
-        <div class="dmain">
-            <div class="grid">
-                <div class="card card1"></div>
-                <div class="card card2"></div>
-                <div class="card card3"></div>
-                <div class="card card4"></div>
-                <div class="card card5"></div>
-                <div class="card card6"></div>
-            </div>
+
+<head>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+        }
+
+        .card {
+            border: 2px solid #0c0c0c;
+            padding: 10px;
+            border: none;
+            transition: all 1s ease-in-out;
+        }
+
+        .card1 {
+            background-image: url("Sua.jpg");
+            background-size: cover;
+        }
+
+        .card2 {
+            background-image: url("Mizi.jpg");
+            background-size: cover;
+        }
+
+        .card3 {
+            background-image: url("Till.jpg");
+            background-size: cover;
+        }
+
+        .card4 {
+            background-image: url("Ivan.jpg");
+            background-size: cover;
+        }
+
+        .card5 {
+            background-image: url("Luka.jpg");
+            background-size: cover;
+        }
+
+        .card6 {
+            background-image: url("HYUNA.jpg");
+            background-size: cover;
+        }
+
+        .card1:hover {
+            transform: rotate(180deg);
+        }
+
+        .card2:hover {
+            transform: rotateY(180deg);
+        }
+
+        .card3:hover {
+            transform: rotate(360deg);
+        }
+
+        .card4:hover {
+            transform: scaleY(2.5);
+        }
+
+        .card5:hover {
+            transform: skewY(180deg);
+        }
+
+        .card6:hover {
+            transform: translateY(-200px);
+        }
+
+        .dmain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dmain">
+        <div class="grid">
+            <div class="card card1"></div>
+            <div class="card card2"></div>
+            <div class="card card3"></div>
+            <div class="card card4"></div>
+            <div class="card card5"></div>
+            <div class="card card6"></div>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
