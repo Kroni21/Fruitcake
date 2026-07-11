@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #ff6347;
+        }
+        #button{
+            display: none;
+        }
+
+        .button{
+            background-color: #ffffff;
+            display: flex;
+            width: 8rem;
+            height: 2rem;
+            color: #ff6347;
+            font-family: sans-serif;
+            font-weight: 600;
+            padding: .5rem 1rem;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            border: 1px solid rgb(204, 57, 31);
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+
+        .s1, .s2{
+            display: none;
+        }
+
+        #button:checked+.button .s0{
+            display: none;
+        }
+
+        #button:checked+.button .s1,
+        #button:checked+.button .s2{
+            display: block;
+        }
+
+        #button:checked+.button{
+            width: 20rem;
+        }
+
+        #button:checked+.button .s1{
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        #button:checked+.button .s2{
+            background-color: #ff6347;
+            border: none;
+            color: #ffffff;
+            height: 2rem;
+            width: 4rem;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="button">
+    <label for="button" class="button">
+        <span class="s0">Notify me</span>
+        <input type="text" class="s1" placeholder="Email">
+        <input type="submit" value="Send" class="s2">
+    </label>
+</body>
+</html>

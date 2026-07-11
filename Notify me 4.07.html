@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #e38b8b;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bts {
+            display: none;
+        }
+
+        .b1 {
+            background-color: #ffffff;
+            border-radius: 55px;
+            border: 2px solid #ffffff;
+            width: 200px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .p1,
+        .p2 {
+            display: none;
+        }
+
+        #bts:checked+.b1 .p0 {
+            display: none;
+        }
+
+        #bts:checked+.b1 .p1,
+        #bts:checked+.b1 .p2 {
+            display: block
+        }
+
+        #bts:checked+.b1 {
+            width: 400px;
+        }
+
+        #bts:checked+.b1 .p1 {
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        #bts:checked+.b1+.p2 {
+            background-color: #ff6347;
+            border: none;
+            color: #ffffff;
+            height: 2rem;
+            width: 60px;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="bts">
+    <label for="bts" class="b1">
+        <span class="p0">Notify me</span>
+        <input type="text" placeholdr="Enter your email" class="p1">
+        <input type="submit" value="Send" class="p2">
+    </label>
+</body>
+
+</html>

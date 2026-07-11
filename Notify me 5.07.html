@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f6858d;
+        }
+
+        #bts {
+            display: none;
+        }
+
+        .b1 {
+            background-color: #ffffff;
+            display: flex;
+            width: 8rem;
+            height: 2rem;
+            color: #ff6347;
+            font-family: sans-serif;
+            font-weight: 600;
+            padding: .5rem 1rem;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            border: 1px solid #e5768b;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+
+        .p1,
+        .p2 {
+            display: none;
+        }
+
+        #bts:checked+.b1 .p0 {
+            display: none;
+        }
+
+        #bts:checked+.b1 .p1,
+        #bts:checked+.b1 .p2 {
+            display: block;
+        }
+
+        #bts:checked+.b1 {
+            width: 20rem;
+        }
+
+        #bts:checked+.b1 .p1 {
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+
+        #bts:checked+.b1 .p2 {
+            background-color: #ff6347;
+            border: none;
+            color: #ffffff;
+            height: 2rem;
+            width: 4rem;
+            border-radius: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="bts">
+    <label for="bts" class="b1">
+        <span class="p0">Notify me</span>
+        <input type="text" class="p1" placeholder="Email">
+        <input type="submit" value="Send" class="p2">
+    </label>
+</body>
+
+</html>
